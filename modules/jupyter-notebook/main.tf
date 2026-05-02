@@ -43,8 +43,8 @@ resource "google_workbench_instance" "jupyter" {
 
     # Pre-built Deep Learning VM image
     vm_image {
-      project = "deeplearning-platform-release"
-      family  = var.enable_gpu ? "tf-latest-gpu" : "tf-latest-cpu"
+      project = "cloud-notebooks-managed"
+      family  = "workbench-instances"
     }
 
     # GPU optionally attached
